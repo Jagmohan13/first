@@ -7,10 +7,6 @@
 
 console.log("vikul arora")
 
-//..............
-
-
-
 
 
 
