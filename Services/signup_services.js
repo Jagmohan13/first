@@ -81,19 +81,7 @@ async function checkPassword(req) {
 
 }
 
-async function join(collectionName1,collectionName2,email1,email2){
-try{
-   var z= await dao.join(collectionName1,collectionName2,email1,email2)
-   console.log(z)
-   return z
-}
-catch(error){
-  console.log(error)
 
-  throw error
-}
-
-}
 
 async function update(email,value){
   const Model = db.collection(signupTable.user)
@@ -107,14 +95,6 @@ async function find(req){
   try{
 
   return await dao.findOne(Model,req)
-  // checkData = JSON.parse(JSON.stringify(checkDatsa));
-  // var z={
-  //    email:checkData.email,
-  //   name:checkData.name,
-  //   phone:checkData.phone,
-  //   password:checkData.password
-  // }
-  // return checkData
   }
   catch(error){
     throw error
