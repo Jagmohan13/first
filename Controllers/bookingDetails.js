@@ -1,36 +1,11 @@
-var services = require('../Services/signup_services')
-var async = require('async');
-var jwt = require('jsonwebtoken');
-var privateKey='confidential'
-
-
-
-
-module.exports= async function details(token){
-    try{
-        var decoder = jwt.verify(token,privateKey)
-             var emailID = decoder.session;
-
-       var result= await services.join("SignUp","Booking",emailID,emailID)
-        return (result)
-    }
-    catch(error){
-        console.log(error)
-
-    return error
-    }
-    }
-    
+// by vikul
 
 
 
 
 
 
-
-
-
-
+console.log("vikul arora")
 
 
 
